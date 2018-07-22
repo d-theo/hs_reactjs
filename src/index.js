@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import {app} from "./redux/app.reducer";
+import {createStore} from "redux";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = createStore(app);
+ReactDOM.render(<App store={store} />, document.getElementById('root'));
 registerServiceWorker();
