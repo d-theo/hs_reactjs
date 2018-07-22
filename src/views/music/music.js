@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux";
-import MusicList from "./music-list";
 import {addMusic, nextMusic, playMusic, removeMusic} from "../../redux/music.action";
 import Player from "./music-player";
+import MusicList from "../../shared/music-list";
 
 const songs = [{
     id: 1,
