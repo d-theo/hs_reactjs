@@ -1,3 +1,21 @@
-.app-header-selected {
-    color: red;
+.app-header {
+    background-color: #e74c3c;
+}
+.app-header-item {
+    padding: 20px;
+    color: white;
+}
+.app-header-item:hover {
+    padding: 20px;
+    color: white;
+    background: #c0392b;
+}
+.app-header-item--selected {
+    background: #c0392b;
+}
+a {
+    text-decoration: none!important;
+}
+a:hover {
+    color: white !important;
 }

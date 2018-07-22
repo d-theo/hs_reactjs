@@ -14,15 +14,15 @@ class Header extends Component {
     }
     render() {
         return (
-            <div className={'d-flex row'}>
+            <div className={'d-flex row app-header'}>
                 <Link
-                    className={'col-sm-4 '+(this.state.selected === 'music' ? 'app-header-selected' : '')}
+                    className={'app-header-item col-sm-4 '+(this.state.selected === 'music' ? 'app-header-item--selected' : '')}
                     onClick={() => this.setSelected('music')} to="/music">music</Link>
                 <Link
-                    className={'col-sm-4 '+(this.state.selected === 'prime' ? 'app-header-selected' : '')}
+                    className={'app-header-item col-sm-4 '+(this.state.selected === 'prime' ? 'app-header-item--selected' : '')}
                     onClick={() => this.setSelected('prime')} to="/prime">prime</Link>
                 <Link
-                    className={'col-sm-4 '+(this.state.selected === 'graph' ? 'app-header-selected' : '')}
+                    className={'app-header-item col-sm-4 '+(this.state.selected === 'graph' ? 'app-header-item--selected' : '')}
                     onClick={() => this.setSelected('graph')} to="/graph">graph</Link>
             </div>
         );

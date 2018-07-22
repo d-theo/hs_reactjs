@@ -13,7 +13,6 @@ class Player extends Component {
             this.audio = new Audio(nextProps.song.url);
             this.audio.play();
             this.audio.onended = () => {
-                console.log('ended');
                 this.props.onAudioEnded(nextProps.song.id);
             }
         }
@@ -24,8 +23,9 @@ class Player extends Component {
             title = this.props.song.title;
         }
         return (
-            <div>
-                now playing {title}
+            <div className={'d-flex col-sm-4 flex-column justify-content-center align-items-center'}>
+                <h4>now playing</h4>
+                <span>{title}</span>
             </div>
         );
     }

@@ -46,7 +46,7 @@ class Music extends Component {
     }
     render() {
         return (
-            <div className={'d-flex justify-content-around'}>
+            <div className={'d-flex row'}>
                 <MusicList songs={songs} conf={this.musicConf} btn1={this.props.onPlaySong} btn2={this.props.onAddSongClick}/>
                 <MusicList songs={this.props.playlist} conf={this.plConf} btn1={this.props.onPlaySong} btn2={this.props.onRemoveFromPlaylist}/>
                 <Player song={this.props.currentSong}></Player>

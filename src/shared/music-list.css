@@ -1,0 +1,12 @@
+.music-list {
+    background: #fafAfA;
+}
+.music-list-line:hover {
+    background: lightcoral;
+}
+.w-100 {
+    width: 100%;
+}
+.hoverable:hover {
+    cursor: pointer;
+}
